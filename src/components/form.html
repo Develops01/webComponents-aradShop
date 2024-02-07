@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Validation</title>
+    <link rel="stylesheet" href="/src/style/output.css" />
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <div class="w-[24rem]">
+      <form
+        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        id="myForm"
+        onsubmit="validateForm(event)"
+      >
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
+            >نام:</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            minlength="5"
+            type="text"
+            placeholder="بیشتر از 5 حرف"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="familyName"
+            >نام خانوادگی:</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            minlength="5"
+            type="text"
+            placeholder="بیشتر از 5 حرف"
+            id="familyName"
+            name="familyName"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="phoneNumber"
+            >شماره موبایل:</label
+          >
+          <input
+            class="text-right shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            pattern="[0-9]{11}"
+            placeholder="شماره تلفن به انگلیسی شامل 0 یعنی 11 عدد"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="title"
+            >عنوان درخواست :</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text"
+            id="title"
+            name="title"
+            required
+          />
+        </div>
+        <div class="w-full py-4">
+          <label
+            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            for="grid-state"
+          >
+            دسته بندی محصول :
+          </label>
+          <div class="w-full relative">
+            <select
+              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="grid-state"
+            >
+              <option>پوشاک</option>
+              <option>پزشکی و سلامت</option>
+              <option>منسوجات خانگی</option>
+              <option>مواد معدنی و شیمیایی</option>
+              <option>چرم</option>
+              <option>مصالح ساختمانی</option>
+              <option>مواد غذایی</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+            >
+              <svg
+                class="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="text"
+            >توضیحات درخواست محصول :</label
+          >
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="text"
+            name="text"
+            rows="4"
+            required
+          ></textarea>
+
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 bg-aradDirtyGold text-gray-700 cursor-pointer"
+            type="submit"
+            value="ارسال"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="/src/js/formVaild.js"></script>
+  </body>
+</html>

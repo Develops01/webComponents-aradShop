@@ -1,0 +1,19 @@
+{
+  "name": "arad-shop-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/style/input.css -o ./src/style/output.css",
+    "watch": "tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "vazirmatn": "^33.0.3"
+  }
+}

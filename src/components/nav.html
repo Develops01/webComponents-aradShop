@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <title>nav</title>
+  </head>
+  <body>
+    <nav
+      class="relative flex flex-row justify-around w-full bg-aradDark p-4 px-10"
+    >
+      <div
+        class="z-50 relative p-6 md:w-1/12 h-full flex justify-start items-center"
+      >
+        <div class="flex md:hidden menu-burger">
+          <div class="burger-inner"></div>
+        </div>
+      </div>
+      <div class="h-full hidden md:flex justify-start items-center pt-3">
+        <a
+          href="#"
+          class="text-xl font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+          >صفحه اصلی</a
+        >
+        <div class="relative inline-block text-left" id="dropdown-container">
+          <div class="group inline-flex items-center">
+            <button
+              type="button"
+              class="group-hover:text-aradDirtyGold flex justify-center items-center w-full gap-x-1.5 rounded-md bg-aradDark px-3 py-2 text-xl font-semibold ring-0 text-aradPink hover:text-aradGold transition-all duration-500"
+              id="menu-button"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              محصولات
+            </button>
+
+            <svg
+              class="-mr-3 h-8 text-aradPink group-hover:text-aradDirtyGold transition-all duration-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div
+            class="absolute text-right right-0 z-10 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                >مواد غذایی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >مصالح ساختمانی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >چرم</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >مواد معدنی و شیمیایی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >منسوجات خانگی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >پزشکی و سلامت</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >پوشاک</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >شوینده</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu md:hidden bg-aradDark pt-14">
+        <a
+          href="#"
+          class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
+          >صفحه اصلی</a
+        >
+        <a
+          href="#"
+          class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
+          >محصولات :</a
+        >
+        <ul aria-label="محصولات :">
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-0"
+              >مواد غذایی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-1"
+              >مصالح ساختمانی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >چرم</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >مواد معدنی و شیمیایی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >منسوجات خانگی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >پزشکی و سلامت</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >پوشاک</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >شوینده</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex md:w-8/12 justify-stretch items-center">
+        <div class="w-full">
+          <label for="search" class="sr-only">جست و جو برای ...</label>
+          <div class="relative">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            >
+              <svg
+                class="h-5 w-5 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <input
+              id="search"
+              name="search"
+              class="block outline-0 w-full rounded-md border-0 bg-aradLight py-1.5 pl-10 pr-3 text-white ring-0 placeholder:text-white focus:ring-0 sm:text-sm sm:leading-6"
+              placeholder="جست و جو برای ..."
+              type="search"
+            />
+          </div>
+        </div>
+      </div>
+      <a href="#" class="w-14 m-1"
+        ><img
+          class="shadow mr-2 bg-aradDark"
+          src="../assets/Main-page/arad-logo.png"
+          alt="logo"
+      /></a>
+    </nav>
+  </body>
+  <script src="../js/nav.js"></script>
+</html>

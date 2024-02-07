@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/output.css" />
+    <title>Arad Shop</title>
+  </head>
+  <body class="bg-aradBG">
+    <nav
+      class="relative flex flex-row justify-around w-full bg-aradDark p-4 px-10"
+    >
+      <div
+        class="z-50 relative p-6 md:w-1/12 h-full flex justify-start items-center"
+      >
+        <div class="flex md:hidden menu-burger">
+          <div class="burger-inner"></div>
+        </div>
+      </div>
+      <div class="h-full hidden md:flex justify-start items-center pt-3">
+        <a
+          href="#"
+          class="text-xl font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+          >صفحه اصلی</a
+        >
+        <div class="relative inline-block text-left" id="dropdown-container">
+          <div class="group inline-flex items-center">
+            <button
+              type="button"
+              class="group-hover:text-aradDirtyGold flex justify-center items-center w-full gap-x-1.5 rounded-md bg-aradDark px-3 py-2 text-xl font-semibold ring-0 text-aradPink hover:text-aradGold transition-all duration-500"
+              id="menu-button"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              محصولات
+            </button>
+
+            <svg
+              class="-mr-3 h-8 text-aradPink group-hover:text-aradDirtyGold transition-all duration-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div
+            class="absolute text-right right-0 z-10 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                >مواد غذایی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >مصالح ساختمانی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >چرم</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >مواد معدنی و شیمیایی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >منسوجات خانگی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >پزشکی و سلامت</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >پوشاک</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >شوینده</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu md:hidden bg-aradDark pt-14">
+        <a
+          href="#"
+          class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
+          >صفحه اصلی</a
+        >
+        <a
+          href="#"
+          class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
+          >محصولات :</a
+        >
+        <ul aria-label="محصولات :">
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-0"
+              >مواد غذایی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-1"
+              >مصالح ساختمانی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >چرم</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >مواد معدنی و شیمیایی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >منسوجات خانگی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >پزشکی و سلامت</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >پوشاک</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >شوینده</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex md:w-8/12 justify-stretch items-center">
+        <div class="w-full">
+          <label for="search" class="sr-only">جست و جو برای ...</label>
+          <div class="relative">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            >
+              <svg
+                class="h-5 w-5 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <input
+              id="search"
+              name="search"
+              class="block outline-0 w-full rounded-md border-0 bg-aradLight py-1.5 pl-10 pr-3 text-white ring-0 placeholder:text-white focus:ring-0 sm:text-sm sm:leading-6"
+              placeholder="جست و جو برای ..."
+              type="search"
+            />
+          </div>
+        </div>
+      </div>
+      <a href="#" class="w-14 m-1"
+        ><img
+          class="shadow mr-2 bg-aradDark"
+          src="/src/assets/Main-page/arad-logo.png"
+          alt="logo"
+      /></a>
+    </nav>
+    <div
+      class="relative w-full flex flex-col gap-2 justify-center items-center pt-5 pb-5"
+    >
+      <img
+        class="absolute -z-10 w-full h-96 top-0"
+        src="/src/assets//Main-page/home-hero-bg.webp"
+        alt="hero-bg"
+      />
+      <img
+        class="p-2 w-36"
+        src="/src/assets//Main-page/arad-logo-white.svg"
+        alt="logo-white"
+      />
+      <h1 class="font-semibold text-lg pt-8 text-white">
+        پل ارتباطی بین خریداران و فروشندگان محصولات عمده
+      </h1>
+      <p class="text-base font-semibold text-white">
+        ارتباط مستقیم با خریداران و فروشندگان عمده
+      </p>
+      <button
+        class="bg-aradDirtyGold px-4 py-3 rounded-xl font-semibold text-base mt-4 hover:bg-aradGold transition-all duration-500"
+      >
+        شروع معاملات عمده
+      </button>
+    </div>
+    <div
+      class="relative flex flex-col lg:flex-row justify-center items-center w-full gap-3 md:px-44 mt-4 py-16"
+    >
+      <img
+        class="absolute w-full h-full lg:h-auto object-cover -z-20"
+        src="/src/assets//Main-page/category_List_Background.svg"
+        alt=""
+      />
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href="">
+            <img
+              class="rounded-[100%] object-cover shadow-xl"
+              src="/src/assets//Main-page/food-unsplash (1).jpg"
+              alt="food"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          مواد غذایی
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href="">
+            <img
+              class="rounded-[100%] w-full h-full object-cover shadow-xl"
+              src="/src/assets//Main-page/build-cargp.jpg"
+              alt="Building Materials"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          مصالح ساختمانی
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href="">
+            <img
+              class="rounded-[100%] h-full w-full shadow-xl"
+              src="/src/assets//Main-page/leather.jpg"
+              alt="leather"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          چرم
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href="">
+            <img
+              class="rounded-[100%] h-full w-full shadow-xl"
+              src="/src/assets//Main-page/chem.jpg"
+              alt="chemestry"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          مواد معدنی و شیمیایی
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href="">
+            <img
+              class="rounded-[100%] h-full w-full shadow-xl"
+              src="/src/assets//Main-page/bed.jpg"
+              alt="bed"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          منسوجات خانگی
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href=""
+            ><img
+              class="rounded-[100%] h-full w-full shadow-xl"
+              src="/src/assets//Main-page/medic.jpg"
+              alt="medical"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          پزشکی و سلامت
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div
+          class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
+        >
+          <a href="">
+            <img
+              class="rounded-[100%] h-full w-full shadow-xl"
+              src="/src/assets//Main-page/cloth.jpg"
+              alt="cloth"
+          /></a>
+        </div>
+        <a
+          href=""
+          class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
+        >
+          پوشاک
+        </a>
+      </div>
+    </div>
+    <div class="bg- relative flex flex-col justify-center items-center gap-2">
+      <img
+        class="absolute w-full h-full object-cover -z-10"
+        src="/src/assets/Main-page/Description_Background.svg"
+        alt=""
+      />
+      <div class="flex flex-row justify-center items-center">
+        <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
+        <h2 class="px-5 text-center font-semibold text-lg text-aradPink pt-4">
+          ارتباط مستقیم با خریداران و فروشندگان عمده محصولات
+        </h2>
+        <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
+      </div>
+      <p class="text-aradFontGray px-6">
+        برای استعلام قیمت و خرید عمده محصولات از بهترین عمده فروشان همین الان
+        ثبت نام کنید.
+      </p>
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center gap-3 md:w-10/12 w-full px-2 pt-28"
+      >
+        <div
+          class="h-[20rem] relative flex flex-col justify-center items-center w-full bg-white rounded-xl"
+        >
+          <div
+            class="absolute rounded-[100%] bg-aradDirtyGold hover:bg-aradGold hover:shadow-md hover:shadow-aradGold transition-all duration-500 -top-20"
+          >
+            <img src="/src/assets/Main-page/basket.png" alt="basket" />
+          </div>
+          <h3 class="font-semibold text-aradFontPink text-lg sm:pt-16">
+            خدمات مشتری
+          </h3>
+          <p class="text-aradFontDark sm:py-3 sm:px-12 text-right px-5">
+            به شما توصیه می شود کسب و کار خود را مدیریت کنید، برند خود را
+            بسازید، خدمات مشاوره رایگان دریافت کنید، تجارت و محصول خود را با
+            معامله گران بین المللی به اشتراک بگذارید و با ما درآمد کسب کنید.
+          </p>
+        </div>
+        <div
+          class="h-[20rem] relative flex flex-col justify-center items-center w-full bg-white rounded-xl"
+        >
+          <div
+            class="absolute rounded-[100%] bg-aradDirtyGold hover:bg-aradGold hover:shadow-md hover:shadow-aradGold transition-all duration-500 -top-20"
+          >
+            <img
+              src="/src/assets/Main-page/arad-logo-borderYel.png"
+              alt="ancher"
+            />
+          </div>
+          <h3 class="font-semibold text-aradFontPink text-lg sm:pt-16">
+            آراد برندینگ چیست؟
+          </h3>
+          <p class="text-aradFontDark sm:py-3 sm:px-12 text-right px-5">
+            آراد برندینگ بازاری برای خرید و فروش عمده محصولات است که خریداران را
+            با عمده فروشان ارتباط می دهد و خریداران و فروشندگان می توانند با
+            یکدیگر ارتباط برقرار کنند.
+          </p>
+        </div>
+        <div
+          class="h-[20rem] relative flex flex-col justify-center items-center w-full bg-white rounded-xl"
+        >
+          <div
+            class="absolute rounded-[100%] bg-aradDirtyGold hover:bg-aradGold hover:shadow-md hover:shadow-aradGold transition-all duration-500 -top-20"
+          >
+            <img src="/src/assets/Main-page/ancher.png" alt="ancher" />
+          </div>
+          <h3 class="font-semibold text-aradFontPink text-lg sm:pt-16">
+            خدمات فروشنده
+          </h3>
+          <p class="text-aradFontDark sm:py-3 sm:px-12 text-right px-5">
+            معرفی محصولات به خریداران عمده، دسترسی به درخواست خرید روزانه، گسترش
+            شبکه تجاری و فروش مشتریان بدون واسطه و با قیمت مناسب.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="py-8 flex flex-col w-full relative justify-center items-center">
+      <img
+        class="absolute w-full h-full object-cover -z-10"
+        src="/src/assets/Main-page/Products_Background.svg"
+        alt=""
+      />
+
+      <div
+        class="w-full relative flex flex-col justify-center items-center gap-2"
+      >
+        <div class="flex flex-row justify-center items-center">
+          <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
+          <h2
+            class="px-5 text-center font-semibold text-lg text-aradDirtyGold pt-4"
+          >
+            آخرین محصولات
+          </h2>
+          <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
+        </div>
+        <p class="text-aradFontGray px-6">
+          برای استعلام قیمت و خرید عمده محصولات از بهترین عمده فروشان همین الان
+          ثبت نام کنید.
+        </p>
+      </div>
+      <div class="container" dir="ltr">
+        <div class="slider-wrapper">
+          <button
+            id="prev-slide"
+            class="bg-white slide-button material-symbols-rounded"
+          >
+            <img
+              class="rotate-180"
+              src="/src/assets/icons/arrow_right.svg"
+              alt=""
+            />
+          </button>
+          <div class="image-list h-[35rem] px-5">
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-start w-full pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[24rem] h-full m-0 p-0 flex justify-center items-center"
+            >
+              <div class="w-full h-96 flex items-center justify-center">
+                <div class="max-w-sm w-full">
+                  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div
+                      class="flex justify-center items-center relative w-full h-56 p-4"
+                    >
+                      <img
+                        class="absolute w-full max-h-full"
+                        src="/src/assets/Main-page/redOnion.webp"
+                        alt=""
+                      />
+                      <div class="z-10 absolute top-4 right-4">
+                        <svg
+                          class="h-6 w-6 text-white fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="p-4 text-right">
+                      <p
+                        class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                      >
+                        پیاز قرمز • سایز 55
+                      </p>
+                      <p class="text-3xl text-gray-900">150000-200000 تومان</p>
+                      <p class="text-gray-700">
+                        نوع بسته بندی: کیسه های 25 کیلویی
+                      </p>
+                    </div>
+                    <div
+                      class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                    >
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">10</span> : حجم
+                          سفارش به تن
+                        </p>
+                      </div>
+                      <div class="flex-1 inline-flex items-center">
+                        <p>
+                          <span class="text-gray-900 font-bold">EXW</span> : ترم
+                          تحویل بار
+                        </p>
+                      </div>
+                      <img
+                        class="h-11 w-11 text-gray-600 absolute -top-1 right-2"
+                        src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                        alt="cargo"
+                      />
+                    </div>
+                    <div
+                      class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                    >
+                      <div
+                        class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+                      >
+                        تامین کننده
+                      </div>
+                      <div class="relative flex items-center pt-2">
+                        <div
+                          class="flex justify-center items-center w-10 h-10 rounded-full mr-3"
+                        >
+                          <img
+                            class="min-w-full rounded-full"
+                            src="/src/assets/Main-page/oladi.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-right">
+                          <p class="font-bold text-gray-900">سجاد اولادی</p>
+                          <p class="text-sm text-gray-700">(+98) 912 1001010</p>
+                        </div>
+                        <button
+                          class="absolute right-5 bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                        >
+                          اطلاعات بیشتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            <img
+              class="text-white"
+              src="/src/assets/icons/arrow_right.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="bg-aradDirtyGold px-4 py-3 rounded-xl font-semibold text-base mt-4 hover:bg-aradGold transition-all duration-500"
+      >
+        مشاهده همه محصولات
+      </button>
+    </div>
+    <div
+      class="flex justify-center items-center w-full p-10 bg-gradient-to-b from-aradDark via-[#5e313b] to-aradDark"
+    >
+      <div class="w-[24rem] md:w-6/12">
+        <form
+          class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          id="myForm"
+          onsubmit="validateForm(event)"
+        >
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
+              >نام:</label
+            >
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              minlength="5"
+              type="text"
+              placeholder="بیشتر از 5 حرف"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="familyName"
+              >نام خانوادگی:</label
+            >
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              minlength="5"
+              type="text"
+              placeholder="بیشتر از 5 حرف"
+              id="familyName"
+              name="familyName"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="phoneNumber"
+              >شماره موبایل:</label
+            >
+            <input
+              class="text-right shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              pattern="[0-9]{11}"
+              placeholder="شماره تلفن به انگلیسی شامل 0 یعنی 11 عدد"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="title"
+              >عنوان درخواست :</label
+            >
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              id="title"
+              name="title"
+              required
+            />
+          </div>
+          <div class="w-full py-4">
+            <label
+              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              for="grid-state"
+            >
+              دسته بندی محصول :
+            </label>
+            <div class="w-full relative">
+              <select
+                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state"
+              >
+                <option>پوشاک</option>
+                <option>پزشکی و سلامت</option>
+                <option>منسوجات خانگی</option>
+                <option>مواد معدنی و شیمیایی</option>
+                <option>چرم</option>
+                <option>مصالح ساختمانی</option>
+                <option>مواد غذایی</option>
+              </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              >
+                <svg
+                  class="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="w-full mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="text"
+              >توضیحات درخواست محصول :</label
+            >
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="text"
+              name="text"
+              rows="4"
+              required
+            ></textarea>
+
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 bg-aradDirtyGold text-gray-700 cursor-pointer"
+              type="submit"
+              value="ارسال"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer
+      class="flex flex-col items-center justify-start relative w-full bg-aradDark md:px-20 pt-10 pb-5"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-start items-center w-full gap-10"
+      >
+        <div class="flex flex-col justify-center items-start gap-2">
+          <h4 class="text-sm cursor-default text-aradDirtyGold">
+            لیست قیمت های عمده امروز :
+          </h4>
+          <ul class="flex flex-col gap-2">
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار تهران</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار شیراز</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار اصفهان</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار مشهد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >رب گوجه فرنگی</a
+            >
+          </ul>
+        </div>
+        <div class="flex flex-col justify-center items-start gap-2">
+          <h4 class="text-sm cursor-default text-aradDirtyGold">
+            وبسایت های آراد :
+          </h4>
+          <ul class="flex flex-col gap-2">
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >مدرسه تجارت</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >خبر گزاری آراد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >هوش مصنوعی آراد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >رادیو آراد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >آراد نامج</a
+            >
+          </ul>
+        </div>
+      </div>
+      <img
+        class="md:absolute md:p-0 py-10 relative md:left-20 md:top-16 w-32"
+        src="/src/assets/Main-page/arad-logo.png"
+        alt=""
+      />
+      <div
+        class="flex flex-row justify-center items-center gap-1 pt-8 cursor-default"
+      >
+        <p class="text-sm font-semibold text-white">تمامی حقوق برای</p>
+        <span
+          class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+          >آراد</span
+        ><span
+          class="text-sm font-semibold text-aradDirtyGold hover:text-aradPink transition-all duration-500"
+          >برندینگ</span
+        >
+        <p class="text-sm font-semibold text-white">محفوظ است</p>
+      </div>
+    </footer>
+  </body>
+  <script src="/src/js/nav.js"></script>
+  <script src="/src/js/slider.js"></script>
+  <script src="/src/js/formVaild.js"></script>
+</html>
