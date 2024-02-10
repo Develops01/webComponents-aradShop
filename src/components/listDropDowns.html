@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar with Dropdowns</title>
+    <link rel="stylesheet" href="/src/style/output.css" />
+    <style>
+      .dropdown-content {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="bg-stone-200">
+    <!-- Sidebar -->
+    <div class="bg-aradDark text-white w-64 flex-shrink-0">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold">دسته بندی ها</h2>
+      </div>
+      <div class="p-4">
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 transition-all duration-500"
+            onclick="toggleDropdown('dropdown1')"
+          >
+            مواد غذایی
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown1" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >میوه</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >خشکبار</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >نوشیدنی</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >شیرینی</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >سبزیجات</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >خوار و بار</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+            onclick="toggleDropdown('dropdown2')"
+          >
+            مصالح ساختمانی
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown2" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >کاشی سرامیک</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >پنجره</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >لوله و اتصالات</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+            onclick="toggleDropdown('dropdown3')"
+          >
+            چرم
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown3" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >کفش چرم زنانه</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >کیف چرم</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >اکسسوری چرم</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+            onclick="toggleDropdown('dropdown4')"
+          >
+            منسوجات خانگی
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown4" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >کالای خواب</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >فرش و موکت</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >حوله</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+            onclick="toggleDropdown('dropdown5')"
+          >
+            پزشکی و سلامت
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown5" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >تجهیزات پزشکی</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >لوازم آرایشی و بهداشتی</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >لوازم ارتوپدی</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+            onclick="toggleDropdown('dropdown6')"
+          >
+            پوشاک
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown6" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >پوشاک نوزاد و کودک</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >پوشاک بانوان</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >پوشاک اقایان</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+            onclick="toggleDropdown('dropdown7')"
+          >
+            مواد معدنی و شیمیایی
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="dropdown7" class="dropdown-content">
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >گیلسونایت</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+              >روغن موتور</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="/src/js/toggleDropdown.js"></script> -->
+  </body>
+</html>

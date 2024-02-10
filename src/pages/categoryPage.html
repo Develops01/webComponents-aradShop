@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/output.css" />
+    <title>Category Page</title>
+  </head>
+  <body class="bg-aradBG">
+    <nav
+      class="relative flex flex-row justify-around w-full bg-aradDark p-4 px-10"
+    >
+      <div
+        class="z-50 relative p-6 md:w-1/12 h-full flex justify-start items-center"
+      >
+        <div class="flex md:hidden menu-burger">
+          <div class="burger-inner"></div>
+        </div>
+      </div>
+      <div class="h-full hidden md:flex justify-start items-center pt-3">
+        <a
+          href="#"
+          class="text-xl font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+          >صفحه اصلی</a
+        >
+        <div class="relative inline-block text-left" id="dropdown-container">
+          <div class="group inline-flex items-center">
+            <button
+              type="button"
+              class="group-hover:text-aradDirtyGold flex justify-center items-center w-full gap-x-1.5 rounded-md bg-aradDark px-3 py-2 text-xl font-semibold ring-0 text-aradPink hover:text-aradGold transition-all duration-500"
+              id="menu-button"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              محصولات
+            </button>
+
+            <svg
+              class="-mr-3 h-8 text-aradPink group-hover:text-aradDirtyGold transition-all duration-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div
+            class="absolute text-right right-0 z-10 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+            id="dropdown-menu"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                >مواد غذایی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >مصالح ساختمانی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >چرم</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >مواد معدنی و شیمیایی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >منسوجات خانگی</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >پزشکی و سلامت</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >پوشاک</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-xl"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >شوینده</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu md:hidden bg-aradDark pt-14">
+        <a
+          href="#"
+          class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
+          >صفحه اصلی</a
+        >
+        <a
+          href="#"
+          class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
+          >محصولات :</a
+        >
+        <ul aria-label="محصولات :">
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-0"
+              >مواد غذایی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-1"
+              >مصالح ساختمانی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >چرم</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >مواد معدنی و شیمیایی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >منسوجات خانگی</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >پزشکی و سلامت</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >پوشاک</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white block px-4 py-2 text-xl"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >شوینده</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex md:w-8/12 justify-stretch items-center">
+        <div class="w-full">
+          <label for="search" class="sr-only">جست و جو برای ...</label>
+          <div class="relative">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            >
+              <svg
+                class="h-5 w-5 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <input
+              id="search"
+              name="search"
+              class="block outline-0 w-full rounded-md border-0 bg-aradLight py-1.5 pl-10 pr-3 text-white ring-0 placeholder:text-white focus:ring-0 sm:text-sm sm:leading-6"
+              placeholder="جست و جو برای ..."
+              type="search"
+            />
+          </div>
+        </div>
+      </div>
+      <a href="#" class="w-14 m-1"
+        ><img
+          class="shadow mr-2 bg-aradDark"
+          src="../assets/Main-page/arad-logo.png"
+          alt="logo"
+      /></a>
+    </nav>
+    <div class="flex flex-row justify-center items-start h-full w-full">
+      <!-- Sidebar -->
+      <div
+        class="lg:block hidden h-full m-4 p-2 bg-aradDark rounded-3xl text-white w-64 flex-shrink-0"
+      >
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">دسته بندی ها</h2>
+        </div>
+        <div class="p-4">
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 transition-all duration-500"
+              onclick="toggleDropdown('dropdown1')"
+            >
+              مواد غذایی
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown1" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >میوه</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >خشکبار</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >نوشیدنی</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >شیرینی</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >سبزیجات</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >خوار و بار</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+              onclick="toggleDropdown('dropdown2')"
+            >
+              مصالح ساختمانی
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown2" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >کاشی سرامیک</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >پنجره</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >لوله و اتصالات</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+              onclick="toggleDropdown('dropdown3')"
+            >
+              چرم
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown3" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >کفش چرم زنانه</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >کیف چرم</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >اکسسوری چرم</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+              onclick="toggleDropdown('dropdown4')"
+            >
+              منسوجات خانگی
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown4" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >کالای خواب</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >فرش و موکت</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >حوله</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+              onclick="toggleDropdown('dropdown5')"
+            >
+              پزشکی و سلامت
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown5" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >تجهیزات پزشکی</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >لوازم آرایشی و بهداشتی</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >لوازم ارتوپدی</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+              onclick="toggleDropdown('dropdown6')"
+            >
+              پوشاک
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown6" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >پوشاک نوزاد و کودک</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >پوشاک بانوان</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >پوشاک اقایان</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="flex items-center justify-between w-full px-4 py-2 text-sm font-semibold bg-aradLight rounded hover:bg-stone-700 focus:outline-none focus:bg-stone-700 mt-1 transition-all duration-500"
+              onclick="toggleDropdown('dropdown7')"
+            >
+              مواد معدنی و شیمیایی
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="dropdown7" class="dropdown-content">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >گیلسونایت</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-stone-700 mt-1 transition-all duration-500"
+                >روغن موتور</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- products -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full p-5">
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-center items-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <div class="max-w-sm w-full">
+              <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                <div
+                  class="flex justify-center items-center relative w-full sm:h-44 h-36 p-4"
+                >
+                  <img
+                    class="absolute w-full max-h-full top-0"
+                    src="/src/assets/Main-page/redOnion.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="p-4 pt-2 text-right">
+                  <p
+                    class="uppercase tracking-wide text-sm font-bold text-gray-700"
+                  >
+                    پیاز قرمز • سایز 55
+                  </p>
+                  <p class="text-2xl text-gray-900">150000-200000 تومان</p>
+                </div>
+                <div
+                  class="relative flex p-4 border-t border-gray-300 text-gray-700"
+                >
+                  <img
+                    class="sm:w-11 w-8 absolute sm:left-2 left-1 sm:-top-1 -top-[132px]"
+                    src="/src/assets/icons/container_cargo_freight_logistics_shipping.svg"
+                    alt="cargo"
+                  />
+
+                  <div class="flex-1 inline-flex items-center">
+                    <p>
+                      حجم سفارش به تن :
+                      <span class="text-gray-900 font-bold">10</span>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100"
+                >
+                  <div class="justify-center flex items-center pt-2">
+                    <button
+                      class="bg-aradFontPink hover:shadow-md hover:shadow-pink-300 hover:bg-aradPink transition-all duration-500 text-white px-4 py-2 rounded-xl"
+                    >
+                      اطلاعات بیشتر
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      dir="ltr"
+      class="flex bg-aradDark items-center justify-center py-10 lg:px-0 sm:px-6 px-4"
+    >
+      <div
+        class="lg:w-3/5 w-full flex items-center justify-between border-t border-aradDirtyGold"
+      >
+        <div
+          class="flex items-center pt-3 text-white hover:text-aradGold transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          <svg
+            width="14"
+            height="8"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.1665 4H12.8332"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1.1665 4L4.49984 7.33333"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1.1665 4.00002L4.49984 0.666687"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="text-sm ml-3 font-medium leading-none">صفحه قبلی</p>
+        </div>
+        <div class="sm:flex hidden">
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            1
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            2
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            3
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            4
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            5
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            6
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            7
+          </p>
+          <p
+            class="text-sm font-medium leading-none cursor-pointer text-white hover:text-aradPink border-t border-transparent hover:border-aradGold pt-3 mr-4 px-2 transition-all duration-500 ease-in-out"
+          >
+            8
+          </p>
+        </div>
+        <div
+          class="flex items-center pt-3 text-white hover:text-aradGold transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          <p class="text-sm font-medium leading-none mr-3">صفحه بعدی</p>
+          <svg
+            width="14"
+            height="8"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.1665 4H12.8332"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.5 7.33333L12.8333 4"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.5 0.666687L12.8333 4.00002"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="flex flex-col items-center justify-start relative w-full bg-aradDark md:px-20 pt-10 pb-5"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-start items-center w-full gap-10"
+      >
+        <div class="flex flex-col justify-center items-start gap-2">
+          <h4 class="text-sm cursor-default text-aradDirtyGold">
+            لیست قیمت های عمده امروز :
+          </h4>
+          <ul class="flex flex-col gap-2">
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار تهران</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار شیراز</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار اصفهان</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >میوه و تره بار مشهد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >رب گوجه فرنگی</a
+            >
+          </ul>
+        </div>
+        <div class="flex flex-col justify-center items-start gap-2">
+          <h4 class="text-sm cursor-default text-aradDirtyGold">
+            وبسایت های آراد :
+          </h4>
+          <ul class="flex flex-col gap-2">
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >مدرسه تجارت</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >خبر گزاری آراد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >هوش مصنوعی آراد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >رادیو آراد</a
+            >
+            <a
+              class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+              href=""
+              >آراد نامج</a
+            >
+          </ul>
+        </div>
+      </div>
+      <img
+        class="md:absolute md:p-0 py-10 relative md:left-20 md:top-16 w-32"
+        src="/src/assets/Main-page/arad-logo.png"
+        alt=""
+      />
+      <div
+        class="flex flex-row justify-center items-center gap-1 pt-8 cursor-default"
+      >
+        <p class="text-sm font-semibold text-white">تمامی حقوق برای</p>
+        <span
+          class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+          >آراد</span
+        ><span
+          class="text-sm font-semibold text-aradDirtyGold hover:text-aradPink transition-all duration-500"
+          >برندینگ</span
+        >
+        <p class="text-sm font-semibold text-white">محفوظ است</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/src/js/nav.js"></script>
+  <script src="/src/js/toggleDropdown.js"></script>
+</html>
