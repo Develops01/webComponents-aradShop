@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style/output.css" />
-    <title>Arad Shop</title>
+    <link rel="stylesheet" href="/src/style/productSlider.css" />
+    <title>Product Page</title>
   </head>
   <body class="bg-aradBG">
     <nav
@@ -139,8 +140,8 @@
         <a
           href="#"
           class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
-          >محصولات
-        </a>
+          >محصولات</a
+        >
 
         <a
           href="#"
@@ -251,254 +252,130 @@
           alt="logo"
       /></a>
     </nav>
-    <div class="pt-24 bg-aradDark">
-      <div
-        class="relative w-full flex flex-col gap-2 justify-center items-center z-10 pt-5 pb-5"
-      >
-        <img
-          class="absolute -z-10 w-full h-96 top-0"
-          src="/src/assets//Main-page/home-hero-bg.webp"
-          alt="hero-bg"
-        />
-        <img
-          class="p-2 w-36"
-          src="/src/assets//Main-page/arad-logo-white.svg"
-          alt="logo-white"
-        />
-        <h1 class="font-semibold text-lg text-center px-5 pt-8 text-white">
-          پل ارتباطی بین خریداران و فروشندگان محصولات عمده
-        </h1>
-        <p class="text-base font-semibold text-white">
-          ارتباط مستقیم با خریداران و فروشندگان عمده
-        </p>
-        <button
-          class="bg-aradDirtyGold px-4 py-3 rounded-xl font-semibold text-base mt-4 hover:bg-aradGold transition-all duration-500"
-        >
-          شروع معاملات عمده
-        </button>
-      </div>
-    </div>
     <div
-      class="py-14 flex flex-col w-full relative justify-center items-center"
+      class="w-full flex flex-col md:flex-row justify-center items-start relative h-full pt-4"
     >
-      <img
-        class="absolute w-full h-full lg:h-auto object-cover -z-20"
-        src="/src/assets/Main-page/category_List_Background.svg"
-        alt=""
-      />
-
-      <div class="max-w-[1400px] w-full">
-        <div class="relative p-0">
-          <div
-            style="scrollbar-width: none"
-            class="grid gap-4 overflow-x-auto h-full w-full px-5"
-          >
+      <div dir="ltr" class="section h-full over-hide px-sm-0">
+        <div class="container">
+          <div class="row justify-content-center">
             <div
-              class="relative flex flex-row justify-center items-center w-full gap-3 mt-4"
+              class="col-lg-10 col-xl-8 align-self-center padding-tb flex justify-center items-center"
             >
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href="">
-                    <img
-                      class="rounded-[100%] object-cover shadow-xl"
-                      src="/src/assets/Main-page/food-unsplash (1).jpg"
-                      alt="food"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  مواد غذایی
-                </a>
-              </div>
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href="">
-                    <img
-                      class="rounded-[100%] w-full h-full object-cover shadow-xl"
-                      src="/src/assets/Main-page/build-cargp.jpg"
-                      alt="Building Materials"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  مصالح ساختمانی
-                </a>
-              </div>
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href="">
-                    <img
-                      class="rounded-[100%] h-full w-full shadow-xl"
-                      src="/src/assets/Main-page/leather.jpg"
-                      alt="leather"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  چرم
-                </a>
-              </div>
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href="">
-                    <img
-                      class="rounded-[100%] h-full w-full shadow-xl"
-                      src="/src/assets/Main-page/chem.jpg"
-                      alt="chemestry"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  مواد معدنی و شیمیایی
-                </a>
-              </div>
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href="">
-                    <img
-                      class="rounded-[100%] h-full w-full shadow-xl"
-                      src="/src/assets/Main-page/bed.jpg"
-                      alt="bed"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  منسوجات خانگی
-                </a>
-              </div>
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href=""
-                    ><img
-                      class="rounded-[100%] h-full w-full shadow-xl"
-                      src="/src/assets/Main-page/medic.jpg"
-                      alt="medical"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  پزشکی و سلامت
-                </a>
-              </div>
-              <div class="flex flex-col justify-center items-center w-full">
-                <div
-                  class="rounded-[100%] w-40 h-40 hover:shadow-md hover:shadow-aradGold transition-all duration-500 shadow-lg p-1"
-                >
-                  <a href="">
-                    <img
-                      class="rounded-[100%] h-full w-full shadow-xl"
-                      src="/src/assets/Main-page/cloth.jpg"
-                      alt="cloth"
-                  /></a>
-                </div>
-                <a
-                  href=""
-                  class="text-base pt-4 font-semibold hover:text-aradPink transition-all"
-                >
-                  پوشاک
-                </a>
+              <div class="section mx-auto text-center slider-height-padding">
+                <input
+                  class="checkbox frst"
+                  type="radio"
+                  id="slide-1"
+                  name="slider"
+                  checked
+                />
+                <label for="slide-1"></label>
+                <input
+                  class="checkbox scnd"
+                  type="radio"
+                  name="slider"
+                  id="slider-2"
+                />
+                <label for="slider-2"></label>
+                <input
+                  class="checkbox thrd"
+                  type="radio"
+                  name="slider"
+                  id="slider-3"
+                />
+                <label for="slider-3"></label>
+                <input
+                  class="checkbox foth"
+                  type="radio"
+                  name="slider"
+                  id="slider-4"
+                />
+                <label for="slider-4"></label>
+                <ul>
+                  <li>
+                    <span>ARAD BRANDING</span>
+                  </li>
+                  <li>
+                    <span>ARAD BRANDING</span>
+                  </li>
+                  <li>
+                    <span>ARAD BRANDING</span>
+                  </li>
+                  <li>
+                    <span>ARAD BRANDING</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bg- relative flex flex-col justify-center items-center gap-2">
-      <img
-        class="absolute w-full h-full object-cover -z-10"
-        src="/src/assets/Main-page/Description_Background.svg"
-        alt=""
-      />
-      <div class="flex flex-row justify-center items-center">
-        <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
-        <h2 class="px-5 text-center font-semibold text-lg text-aradPink pt-4">
-          ارتباط مستقیم با خریداران و فروشندگان عمده محصولات
-        </h2>
-        <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
-      </div>
-      <p class="text-aradFontGray px-6">
-        برای استعلام قیمت و خرید عمده محصولات از بهترین عمده فروشان همین الان
-        ثبت نام کنید.
-      </p>
-      <div
-        class="flex flex-col lg:flex-row justify-center items-center gap-3 md:w-10/12 w-full px-2 pt-36"
-      >
-        <div
-          class="h-[20rem] relative flex flex-col justify-center items-center w-full bg-white rounded-xl"
-        >
-          <div
-            class="absolute rounded-[100%] bg-aradDirtyGold hover:bg-aradGold hover:shadow-md hover:shadow-aradGold transition-all duration-500 -top-20"
-          >
-            <img src="/src/assets/Main-page/basket.png" alt="basket" />
-          </div>
-          <h3 class="font-semibold text-aradFontPink text-lg sm:pt-16">
-            خدمات مشتری
-          </h3>
-          <p class="text-aradFontDark sm:py-3 sm:px-12 text-right px-5">
-            به شما توصیه می شود کسب و کار خود را مدیریت کنید، برند خود را
-            بسازید، خدمات مشاوره رایگان دریافت کنید، تجارت و محصول خود را با
-            معامله گران بین المللی به اشتراک بگذارید و با ما درآمد کسب کنید.
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <div class="w-full px-4 md:px-10 md:pt-[6.5rem]">
+        <div class="border rounded-xl p-5 flex flex-col gap-2">
+          <h2 class="text-xl">فروش عمده ای پیاز طبیعی درجه یک</h2>
+          <p>
+            کدو حلوایی تغذیه ای باور نکردنی که سرشار از ویتامین A بوده و قادر
+            خواهد بود تا بسیاری از نیاز های شما را تامین کند و تا حد زیادی می
+            تواند در جلوگیری بسیاری از امراض مانند سرماخوردگی یا حتی سرطان کمک
+            بسیار شایانی کند علاوه بر آن طعم بسیار لذیذی داشته که پیشنهاد میکنیم
+            حتما امتحان کنید، شما می توانید برای سفارش این محصول پر خاصیت
+            ازمجموعه ما سفارش دهید.
           </p>
+          <div class="flex">
+            <div class="md:px-4 md:pt-3 md:pb-4">
+              <div
+                class="text-xs uppercase font-bold text-gray-600 tracking-wide"
+              >
+                تامین کننده :
+              </div>
+              <div class="relative flex items-start w-full pt-2">
+                <div
+                  class="flex justify-center items-center w-20 h-20 rounded-full mr-3"
+                >
+                  <img
+                    class="min-w-full rounded-full"
+                    src="/src/assets/Main-page/oladi.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="text-right flex flex-col justify-center items-start pr-4 pt-6"
+                >
+                  <p class="font-bold text-gray-900">سجاد اولادی</p>
+                  <p class="text-sm text-gray-700">09121010011</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex flex-col justify-center items-center">
+            <div class="rate">
+              <input type="checkbox" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="checkbox" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="checkbox" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="checkbox" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="checkbox" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+            <p>میانگین امتیاز: 5 / 5 تعداد رای: 1</p>
+          </div>
         </div>
-        <div
-          class="h-[20rem] relative flex flex-col justify-center items-center w-full bg-white rounded-xl"
-        >
+        <div class="border rounded-xl p-5 mt-5">
+          <h2 class="text-lg pb-3 font-semibold text-aradFontPink">قیمت :</h2>
           <div
-            class="absolute rounded-[100%] bg-aradDirtyGold hover:bg-aradGold hover:shadow-md hover:shadow-aradGold transition-all duration-500 -top-20"
+            class="border-2 border-aradFontPink p-5 rounded-xl flex flex-row justify-center items-center"
           >
-            <img
-              src="/src/assets/Main-page/arad-logo-borderYel.png"
-              alt="ancher"
-            />
+            <p class="px-2 font-semibold">15000 - 25000 تومن</p>
+            <hr class="w-5/12 md:flex hidden" />
+            <p class="px-2 font-semibold">20 تن (حداقل میزان سفارش)</p>
           </div>
-          <h3 class="font-semibold text-aradFontPink text-lg sm:pt-16">
-            آراد برندینگ چیست؟
-          </h3>
-          <p class="text-aradFontDark sm:py-3 sm:px-12 text-right px-5">
-            آراد برندینگ بازاری برای خرید و فروش عمده محصولات است که خریداران را
-            با عمده فروشان ارتباط می دهد و خریداران و فروشندگان می توانند با
-            یکدیگر ارتباط برقرار کنند.
-          </p>
-        </div>
-        <div
-          class="h-[20rem] relative flex flex-col justify-center items-center w-full bg-white rounded-xl"
-        >
-          <div
-            class="absolute rounded-[100%] bg-aradDirtyGold hover:bg-aradGold hover:shadow-md hover:shadow-aradGold transition-all duration-500 -top-20"
-          >
-            <img src="/src/assets/Main-page/ancher.png" alt="ancher" />
-          </div>
-          <h3 class="font-semibold text-aradFontPink text-lg sm:pt-16">
-            خدمات فروشنده
-          </h3>
-          <p class="text-aradFontDark sm:py-3 sm:px-12 text-right px-5">
-            معرفی محصولات به خریداران عمده، دسترسی به درخواست خرید روزانه، گسترش
-            شبکه تجاری و فروش مشتریان بدون واسطه و با قیمت مناسب.
-          </p>
         </div>
       </div>
     </div>
@@ -523,7 +400,7 @@
           <h2
             class="px-5 text-center font-semibold text-lg text-aradDirtyGold pt-4"
           >
-            آخرین محصولات
+            محصولات مشابه
           </h2>
           <div class="bg-black h-0.5 sm:w-[14rem] mt-4"></div>
         </div>

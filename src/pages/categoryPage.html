@@ -8,7 +8,7 @@
   </head>
   <body class="bg-aradBG">
     <nav
-      class="relative flex flex-row justify-around w-full bg-aradDark p-4 px-10"
+      class="fixed z-50 flex flex-row justify-around w-full bg-aradDark p-4 px-10"
     >
       <div
         class="z-50 relative p-6 md:w-1/12 h-full flex justify-start items-center"
@@ -17,7 +17,9 @@
           <div class="burger-inner"></div>
         </div>
       </div>
-      <div class="h-full hidden md:flex justify-start items-center pt-3">
+      <div
+        class="relative h-full hidden md:flex justify-start items-center pt-3"
+      >
         <a
           href="#"
           class="text-xl font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
@@ -137,10 +139,9 @@
         <a
           href="#"
           class="w-full h-12 flex items-center text-xl font-semibold text-white px-2"
-          >محصولات :</a
+          >محصولات</a
         >
-        <ul aria-label="محصولات :">
-          <li>
+     
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -149,8 +150,7 @@
               id="menu-item-0"
               >مواد غذایی</a
             >
-          </li>
-          <li>
+        
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -159,8 +159,7 @@
               id="menu-item-1"
               >مصالح ساختمانی</a
             >
-          </li>
-          <li>
+       
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -169,8 +168,7 @@
               id="menu-item-2"
               >چرم</a
             >
-          </li>
-          <li>
+        
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -179,8 +177,7 @@
               id="menu-item-2"
               >مواد معدنی و شیمیایی</a
             >
-          </li>
-          <li>
+      
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -189,8 +186,7 @@
               id="menu-item-2"
               >منسوجات خانگی</a
             >
-          </li>
-          <li>
+         
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -199,8 +195,7 @@
               id="menu-item-2"
               >پزشکی و سلامت</a
             >
-          </li>
-          <li>
+         
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -209,8 +204,7 @@
               id="menu-item-2"
               >پوشاک</a
             >
-          </li>
-          <li>
+      
             <a
               href="#"
               class="text-white block px-4 py-2 text-xl"
@@ -219,7 +213,7 @@
               id="menu-item-2"
               >شوینده</a
             >
-          </li>
+         
         </ul>
       </div>
       <div class="flex md:w-8/12 justify-stretch items-center">
@@ -255,11 +249,11 @@
       <a href="#" class="w-14 m-1"
         ><img
           class="shadow mr-2 bg-aradDark"
-          src="../assets/Main-page/arad-logo.png"
+          src="/src/assets/Main-page/arad-logo.png"
           alt="logo"
       /></a>
     </nav>
-    <div class="flex flex-row justify-center items-start h-full w-full">
+    <div class="flex flex-row justify-center items-start pt-24 h-full w-full">
       <!-- Sidebar -->
       <div
         class="lg:block hidden h-full m-4 p-2 bg-aradDark rounded-3xl text-white w-64 flex-shrink-0"
@@ -1723,9 +1717,40 @@
               href=""
               >رب گوجه فرنگی</a
             >
+            <ul class="md:hidden pt-10 flex flex-col gap-2">
+              <h4 class="text-sm cursor-default text-aradDirtyGold">
+                وبسایت های آراد :
+              </h4>
+
+              <a
+                class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+                href=""
+                >مدرسه تجارت</a
+              >
+              <a
+                class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+                href=""
+                >خبر گزاری آراد</a
+              >
+              <a
+                class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+                href=""
+                >هوش مصنوعی آراد</a
+              >
+              <a
+                class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+                href=""
+                >رادیو آراد</a
+              >
+              <a
+                class="text-sm font-semibold text-aradPink hover:text-aradDirtyGold transition-all duration-500"
+                href=""
+                >آراد نامج</a
+              >
+            </ul>
           </ul>
         </div>
-        <div class="flex flex-col justify-center items-start gap-2">
+        <div class="hidden md:flex flex-col justify-center items-start gap-2">
           <h4 class="text-sm cursor-default text-aradDirtyGold">
             وبسایت های آراد :
           </h4>
