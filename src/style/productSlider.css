@@ -17,8 +17,8 @@ a:hover {
 .padding-tb {
   padding: 100px 0;
 }
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
+.rad:checked,
+.rad:not(:checked) {
   position: absolute;
   left: -9999px;
 }
