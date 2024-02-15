@@ -39,20 +39,20 @@ a:hover {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url("/src/assets/onion4.avif");
+  background-image: url("/src/assets/onion4.jpg");
   animation: border-transform 6s linear infinite alternate forwards;
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   animation-play-state: paused;
 }
 .checkbox.scnd + label {
-  background-image: url("/src/assets/onion3.avif");
+  background-image: url("/src/assets/onion3.jpg");
 }
 .checkbox.thrd + label {
-  background-image: url("/src/assets/onion2.avif");
+  background-image: url("/src/assets/onion2.jpg");
 }
 .checkbox.foth + label {
-  background-image: url("/src/assets/onion1.avif");
+  background-image: url("/src/assets/onion1.jpg");
 }
 
 .checkbox:checked + label {
@@ -118,7 +118,7 @@ ul li {
   border: 5px solid #bd6678;
   background-size: cover;
   background-position: center;
-  background-image: url("/src/assets/onion4.avif");
+  background-image: url("/src/assets/onion4.jpg");
   border-radius: 50%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -138,13 +138,13 @@ ul li span {
   mix-blend-mode: difference;
 }
 ul li:nth-child(2) {
-  background-image: url("/src/assets/onion3.avif");
+  background-image: url("/src/assets/onion3.jpg");
 }
 ul li:nth-child(3) {
-  background-image: url("/src/assets/onion2.avif");
+  background-image: url("/src/assets/onion2.jpg");
 }
 ul li:nth-child(4) {
-  background-image: url("/src/assets/onion1.avif");
+  background-image: url("/src/assets/onion1.jpg");
 }
 
 .checkbox.frst:checked ~ ul li:nth-child(1) {
