@@ -1,7 +1,8 @@
 {
-  "name": "Arad",
+  "name": "Arad Shop",
   "short_name": "Arad",
-  "start_url": "/?home=true",
+  "start_url": "./?utm_source=pwa",
+  "scope": "./",
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
@@ -28,8 +29,15 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#000000",
+  "description": "this is arad shop pwa app",
+  "theme_color": "#BD6678",
   "background_color": "#F5F5F5",
-  "display": "fullscreen",
-  "orientation": "portrait"
+  "display": "standalone",
+  "screenshots": [
+    {
+      "src": "icons/screenshot.png",
+      "sizes": "331x620",
+      "type": "image/png"
+    }
+  ]
 }

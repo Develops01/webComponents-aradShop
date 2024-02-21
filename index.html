@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F5F5F5" />
+    <meta name="theme-color" content="#BD6678" />
     <meta
       name="description"
       content="Arad Branding shop for export purposes."
     />
-    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
-    <link rel="manifest" href="../manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/manifest-icon-512.maskable.png" />
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="/src/style/output.css" />
     <title>Arad Shop</title>
   </head>
@@ -1783,11 +1784,7 @@
       </div>
     </footer>
   </body>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/src/js/service-worker.js");
-    }
-  </script>
+  <script src="/src/js/sw-register.js"></script>
   <script src="/src/js/nav.js"></script>
   <script src="/src/js/slider.js"></script>
   <script src="/src/js/formVaild.js"></script>
